@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent{
-  result: string = '';
+  result = '';
   longButtons : string[]= ['AC', 'CE']
   buttons : string[] = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '.', '0', '=', '+'];
 
-  private prevValue: string = '';
-  private curValue: string = '';
+  private prevValue = '';
+  private curValue = '';
 
   addToExpression(value: string){
     if (this.result != ''){
